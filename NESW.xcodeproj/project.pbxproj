@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C06C94E41F68A64800C441D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C94E31F68A64800C441D3 /* AppDelegate.swift */; };
-		C06C94E61F68A64800C441D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C94E51F68A64800C441D3 /* ViewController.swift */; };
+		C06C94E61F68A64800C441D3 /* CompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C94E51F68A64800C441D3 /* CompassViewController.swift */; };
 		C06C94E91F68A64800C441D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06C94E71F68A64800C441D3 /* Main.storyboard */; };
 		C06C94EB1F68A64800C441D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06C94EA1F68A64800C441D3 /* Assets.xcassets */; };
 		C06C94EE1F68A64800C441D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06C94EC1F68A64800C441D3 /* LaunchScreen.storyboard */; };
 		C06C94F91F68A64800C441D3 /* NESWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C94F81F68A64800C441D3 /* NESWTests.swift */; };
 		C06C95041F68A64800C441D3 /* NESWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C95031F68A64800C441D3 /* NESWUITests.swift */; };
+		C06C95121F68A70300C441D3 /* DirectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C95111F68A70300C441D3 /* DirectionViewController.swift */; };
+		C06C95141F68ACE400C441D3 /* DirectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C95131F68ACE400C441D3 /* DirectionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		C06C94E01F68A64800C441D3 /* NESW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NESW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06C94E31F68A64800C441D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C06C94E51F68A64800C441D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C06C94E51F68A64800C441D3 /* CompassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassViewController.swift; sourceTree = "<group>"; };
 		C06C94E81F68A64800C441D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C06C94EA1F68A64800C441D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C06C94ED1F68A64800C441D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		C06C94FF1F68A64800C441D3 /* NESWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NESWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06C95031F68A64800C441D3 /* NESWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NESWUITests.swift; sourceTree = "<group>"; };
 		C06C95051F68A64800C441D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C06C95111F68A70300C441D3 /* DirectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionViewController.swift; sourceTree = "<group>"; };
+		C06C95131F68ACE400C441D3 /* DirectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				C06C94E31F68A64800C441D3 /* AppDelegate.swift */,
-				C06C94E51F68A64800C441D3 /* ViewController.swift */,
 				C06C94E71F68A64800C441D3 /* Main.storyboard */,
+				C06C94E51F68A64800C441D3 /* CompassViewController.swift */,
+				C06C95111F68A70300C441D3 /* DirectionViewController.swift */,
+				C06C95131F68ACE400C441D3 /* DirectionDelegate.swift */,
 				C06C94EA1F68A64800C441D3 /* Assets.xcassets */,
 				C06C94EC1F68A64800C441D3 /* LaunchScreen.storyboard */,
 				C06C94EF1F68A64800C441D3 /* Info.plist */,
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C06C94E61F68A64800C441D3 /* ViewController.swift in Sources */,
+				C06C94E61F68A64800C441D3 /* CompassViewController.swift in Sources */,
 				C06C94E41F68A64800C441D3 /* AppDelegate.swift in Sources */,
+				C06C95141F68ACE400C441D3 /* DirectionDelegate.swift in Sources */,
+				C06C95121F68A70300C441D3 /* DirectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
