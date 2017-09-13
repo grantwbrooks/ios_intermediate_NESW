@@ -29,10 +29,7 @@ class DirectionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let compassViewController = segue.destination as! CompassViewController
-//        compassViewController.delegate = self
-//    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

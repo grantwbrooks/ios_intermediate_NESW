@@ -15,7 +15,7 @@ class CompassViewController: UIViewController, DirectionDelegate {
     var direction: String = ""
     
     @IBAction func directionPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "direction", sender: sender)
+        performSegue(withIdentifier: "direction", sender: sender.titleLabel?.text)
 //        direction = sender.titleLabel!.text!
     }
     
@@ -23,8 +23,8 @@ class CompassViewController: UIViewController, DirectionDelegate {
         let directionViewController = segue.destination as! DirectionViewController
         directionViewController.delegate = self
         
-        let directionSent = sender as? UIButton
-        directionViewController.direction = (directionSent?.titleLabel!.text!)!
+        let directionSent = sender as? String
+        directionViewController.direction = (directionSent)!
     }
     
     
@@ -40,6 +40,10 @@ class CompassViewController: UIViewController, DirectionDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func movetoMain(_ segue: UIStoryboardSegue) {
+        
     }
 
 
